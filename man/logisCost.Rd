@@ -29,7 +29,7 @@ X<-array(rnorm(200),dim=c(100,2))
 y<-sqrt(X[,2]^2+X[,1]^2)<.5
 designX<-mapFeat(X)
 designX<-cbind(rep(1,100),designX)
-theta<-rep(1,ncol(designX))
+theta<-rep(0,ncol(designX))
 lambda<-1
 logisCost(theta,designX,y,lambda)
 logisGrad(theta,designX,y,lambda)

@@ -5,8 +5,8 @@ Version: 0.1
 Date: 2014-07-02
 Author: Marco D. Visser
 Maintainer: Marco D. Visser <marco.d.visser@gmail.com>
-A set of simple tools for applying classification problems and
-basic neural networks in R.
+Description: A set of simple tools for applying classification problems and
+    basic neural networks in R.
 License: GPL-2
 URL: http://github.com/MarcoDVisser/rML
 BugReports: http://github.com/MarcoDVisser/rML/issues

@@ -36,17 +36,16 @@ Classifies from variables X
 Classifies from variables X
 }
 \examples{
-X<-array(rnorm(200),dim=c(100,2))
-y<-sqrt(X[,2]^2+X[,1]^2)<.5
+X<-array(runif(2000),dim=c(1000,2))
+y<-sqrt(2*X[,2]^2+2.4*X[,1]^2)<.5
 designX<-mapFeat(X)
 designX<-cbind(rep(1,100),designX)
-theta<-rep(1,ncol(designX))
+theta<-rep(0,ncol(designX))
 lambda<-1
 logisCost(theta,designX,y,lambda)
 logisGrad(theta,designX,y,lambda)
-par<-optim(theta,logisCost,logisGrad,X=designX,y=y,lambda=1,method="BFGS")$par
+par<-optim(theta,logisCost,logisGrad,X=designX,y=y,lambda=.01,method="BFGS")$par
 decPlot(par,designX,X,y,thres=.5)
-plot(logisPred(par,designX))
 }
 \author{
 Marco D. Visser
