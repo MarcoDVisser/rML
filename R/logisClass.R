@@ -235,3 +235,21 @@ return(classes[p])
 }
 
 
+#' 5000 Handwritten digits 
+#' 
+#' A dataset containing 5000 20x20 pixel images of handwritten digits
+#' The dataset comes from the Standford ML course 2014. It is a list of tow items:
+#' 1) a 5000 x 400 matrix containing the grey scale dn values for each image
+#' in each row and 2) the classification of each digit as 0 - 9 as c(10,1-9).
+#' 
+#' \itemize{
+#'   \item listitem1. a 5000 x 400 matrix
+#'   \item listitem1. a 5000 x 1 vector of classifications
+#' }
+#' 
+#' @docType data
+#' @keywords datasets
+#' @name digits
+#' @usage data(digits)
+#' @format A list with 5000 images and their classification
+NULL

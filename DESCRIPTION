@@ -10,3 +10,4 @@ Description: A set of simple tools for applying classification problems and
 License: GPL-2
 URL: http://github.com/MarcoDVisser/rML
 BugReports: http://github.com/MarcoDVisser/rML/issues
+LazyData: false
